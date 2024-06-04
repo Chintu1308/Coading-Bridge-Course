@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: 'Pavanam', sans-serif;
+    background-image: url('img.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f5f5dc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8b0000;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-out;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+    animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+    color: #8b0000;
+    margin-top: 1em;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #8b0000;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Additional Styles for Specific Elements */
+header, footer {
+    padding: 1.5em 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+.container p, .container ul {
+    margin-bottom: 1em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5dc;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #362f2f;
+    border-radius: 20px;
+    border: 3px solid #f5f5dc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #362f2f;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value as needed */
+}
+
+
+/* Style for the WhatsApp link */
+a[title="WhatsApp"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the SVG icon */
+a[title="WhatsApp"] svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Style for the Register link */
+a[title="Register"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the SVG icon */
+a[title="Register"] svg {
+    width: 24px;
+    height: 24px;
+}
+
+
